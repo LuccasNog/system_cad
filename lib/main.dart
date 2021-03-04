@@ -4,6 +4,8 @@ import 'package:projeto_crud/views/user_form.dart';
 import 'package:projeto_crud/views/user_list.dart';
 import 'package:projeto_crud/provider/user.dart';
 import 'package:provider/provider.dart';
+
+
 void main() {
   runApp(MyApp());
 }
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
                           primarySwatch: Colors.amber,
                          visualDensity: VisualDensity.adaptivePlatformDensity,
                    ),
-                   home: UserList(),
+                  // home: UserList(),
                    routes: {
                      AppRoutes.HOME: (_) => UserList(),
                      AppRoutes.USER_FORM: (_) => UserForm()
